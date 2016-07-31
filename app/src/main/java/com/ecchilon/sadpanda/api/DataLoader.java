@@ -1,5 +1,4 @@
 package com.ecchilon.sadpanda.api;
-
 import static com.ecchilon.sadpanda.api.ApiErrorCode.API_ERROR;
 import static com.ecchilon.sadpanda.api.ApiErrorCode.GALLERY_PINNED;
 import static com.ecchilon.sadpanda.api.ApiErrorCode.PHOTO_NOT_FOUND;
@@ -68,7 +67,7 @@ public class DataLoader {
 
 	private static final Pattern pPhotoUrl = Pattern.compile(
 			"width:(\\d+)px; height:(\\d+)px; background:transparent url\\((.+?)\\) -(\\d+)px 0 no-repeat\"><a "
-					+ "href=\"http://exhentai\\.org/s/(\\w+?)/\\d+-(\\d+)");
+					+ "href=\"https://exhentai\\.org/s/(\\w+?)/\\d+-(\\d+)");
 	private static final Pattern pShowkey = Pattern.compile("var showkey.*=.*\"([\\w-]+?)\";");
 	private static final Pattern pImageSrc = Pattern.compile("<img id=\"img\" src=\"(.+)/(.+?)\"");
 	private static final Pattern pGalleryHref = Pattern.compile("<a href=\"" + GALLERY_PATTERN + "\" onmouseover");
